@@ -1,8 +1,8 @@
-div#social-container:after {
+/* div#social-container:after {
   content: '';
   display: block;
   width: 1px;
   height: 150px;
   background-color: black;
   margin: 0px auto;
-}
+} */
