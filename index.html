@@ -24,115 +24,83 @@
     ></script>
   </head>
 
-  <body class="px-16">
-    <header class="py-8">
-      <nav class="flex items-center justify-between flex-wrap">
-        <div class="flex items-center flex-shrink-0 flex-grow">
-          <span class="font-semibold text-xl"
-            ><a href="./">&lt; glenflorendo /&gt;</a></span
-          >
-        </div>
-        <div id="menu-btn" class="block md:hidden">
-          <button class="flex items-center px-3 py-2 border rounded">
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+  <body>
+    <div class="px-16">
+      <header class="py-8">
+        <nav class="flex items-center justify-between flex-wrap">
+          <div class="flex items-center flex-shrink-0 flex-grow">
+            <span class="font-semibold text-xl"
+              ><a href="./">&lt; glenflorendo /&gt;</a></span
             >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div id="menu" class="w-full hidden md:flex md:items-center md:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="#about" class="block mt-4 md:inline-block md:mt-0 ml-5">
-              About
-            </a>
-            <a
-              href="#experience"
-              class="block mt-4 md:inline-block md:mt-0 ml-5"
-            >
-              Experience
-            </a>
-            <a href="#work" class="block mt-4 md:inline-block md:mt-0 ml-5">
-              Work
-            </a>
-            <a href="#contact" class="block mt-4 md:inline-block md:mt-0 ml-5">
-              Contact
-            </a>
-            <button
-              class="block mt-4 md:inline-block md:mt-0 px-4 py-2 leading-none border rounded ml-5"
-            >
-              Resume
+          </div>
+          <div id="menu-btn" class="block md:hidden">
+            <button class="flex items-center px-3 py-2 border rounded">
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
             </button>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <div
-      id="social-container"
-      class="md:flex flex-col fixed bottom-0 text-2xl hidden"
-    >
-      <a
-        href="http://github.com/glenflorendo"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="fab fa-github mb-4"
-      ></a>
-      <a
-        href="http://linkedin.com/in/glenflorendo"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="fab fa-linkedin-in mb-4"
-      ></a>
-      <a
-        href="mailto:glen.florendo@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="fas fa-envelope mb-4"
-      ></a>
-    </div>
-
-    <div id="main-container">
-      <section id="intro">
-        <div>
-          <div>
-            <h3>Hi, I'm</h3>
-            <h1><strong>Glen Florendo</strong>,</h1>
-            <h2>and I build a bunch of things.</h2>
+          <div
+            id="menu"
+            class="w-full hidden md:flex md:items-center md:w-auto"
+          >
+            <div class="text-sm lg:flex-grow">
+              <a href="#about" class="block mt-4 md:inline-block md:mt-0 ml-5">
+                About
+              </a>
+              <a
+                href="#experience"
+                class="block mt-4 md:inline-block md:mt-0 ml-5"
+              >
+                Experience
+              </a>
+              <a href="#work" class="block mt-4 md:inline-block md:mt-0 ml-5">
+                Work
+              </a>
+              <a
+                href="#contact"
+                class="block mt-4 md:inline-block md:mt-0 ml-5"
+              >
+                Contact
+              </a>
+              <button
+                class="block mt-4 md:inline-block md:mt-0 px-4 py-2 leading-none border rounded ml-5"
+              >
+                Resume
+              </button>
+            </div>
           </div>
+        </nav>
+      </header>
 
-          <div class="blurb">
-            <p>
-              I'm a software engineer located in Los Angeleca, California,
-              specializing in building high-quality websites and applications,
-              as well as providing exceptional technical support.
-            </p>
-          </div>
-
-          <div id="intro-social">
-            <ul>
-              <li>
-                <a href="http://github.com/glenflorendo" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://linkedin.com/in/glenflorendo" target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a href="mailto:glen.florendo@gmail.com" target="_blank"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <div
+        id="social-container"
+        class="md:flex flex-col fixed bottom-0 text-2xl hidden"
+      >
+        <a
+          href="http://github.com/glenflorendo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="fab fa-github mb-4"
+        ></a>
+        <a
+          href="http://linkedin.com/in/glenflorendo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="fab fa-linkedin-in mb-4"
+        ></a>
+        <a
+          href="mailto:glen.florendo@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="fas fa-envelope mb-4"
+        ></a>
+      </div>
     </div>
 
     <script src="/scripts/main.js"></script>
