@@ -1,13 +1,10 @@
-html {
-  margin: 0;
-}
-
 body {
   background: rgb(222, 232, 237);
-  padding: 35px 50px;
-  line-height: 1.2;
+  padding: 0 50px;
+  color: black;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  line-height: 1.2;
 }
 
 h1,
@@ -17,42 +14,26 @@ h4,
 h5,
 h6 {
   font-family: 'Prata', serif;
-  font-style: italic;
+  margin: 15px 0;
 }
 
 h1 {
-  font-size: 3em;
-  margin: 5px 0;
+  font-size: 4em;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 5px 0;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 1.5em;
-  margin: 5px 0;
-}
-
-p {
-  font-size: 1em;
-}
-
-.blurb {
-  margin: 20px 0;
-  line-height: 1.5;
-}
-
-#main-container {
-  padding: 0 100px;
+  font-size: 2em;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 25px 0;
 }
 
 header #home {
@@ -82,34 +63,35 @@ nav#main-nav li {
   padding: 0 1em;
 }
 
+div#main-container {
+  margin: 0 100px;
+}
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin: 0 200px;
+  margin: -100px 200px;
 }
 
-section .content {
-  margin-top: -200px;
+div.blurb {
+  width: 50%;
+  margin: 20px 0;
+  line-height: 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  margin: 10px 0;
   border-width: 1px;
   border-style: solid;
-  border-radius: 3px;
-  text-decoration: none;
+  border-radius: 5px;
   padding: 0.75rem 1rem;
-  margin: 10px 0;
   font-size: 1em;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-section#intro {
-  font-size: 20px;
 }
