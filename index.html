@@ -26,17 +26,14 @@
 
   <body class="px-16">
     <header class="py-8">
-      <nav id="main-nav" class="flex items-center justify-between flex-wrap">
-        <div class="flex items-center flex-shrink-0 mr-6 flex-grow">
-          <span class="font-semibold text-xl tracking-tight">
-            <a href="./">&lt; glenflorendo /&gt;</a>
-          </span>
-        </div>
-        <div class="block md:hidden">
-          <button
-            id="menu-btn"
-            class="flex items-center px-3 py-2 border rounded"
+      <nav class="flex items-center justify-between flex-wrap">
+        <div class="flex items-center flex-shrink-0 flex-grow">
+          <span class="font-semibold text-xl"
+            ><a href="./">&lt; glenflorendo /&gt;</a></span
           >
+        </div>
+        <div id="menu-btn" class="block md:hidden">
+          <button class="flex items-center px-3 py-2 border rounded">
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -47,27 +44,25 @@
             </svg>
           </button>
         </div>
-        <div
-          id="menu"
-          class="w-full md:flex md:items-center md:w-auto sm:hidden"
-        >
-          <div class="text-sm">
-            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#about"
-              >About</a
-            >
+        <div id="menu" class="w-full hidden md:flex md:items-center md:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#about" class="block mt-4 md:inline-block md:mt-0 ml-5">
+              About
+            </a>
             <a
-              class="block mt-4 md:inline-block md:mt-0 mr-6"
               href="#experience"
-              >Experience</a
+              class="block mt-4 md:inline-block md:mt-0 ml-5"
             >
-            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#work"
-              >Work</a
-            >
-            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#contact"
-              >Contact</a
-            >
+              Experience
+            </a>
+            <a href="#work" class="block mt-4 md:inline-block md:mt-0 ml-5">
+              Work
+            </a>
+            <a href="#contact" class="block mt-4 md:inline-block md:mt-0 ml-5">
+              Contact
+            </a>
             <button
-              class="inline-block text-sm px-4 py-2 leading-none border rounded mt-4 lg:mt-0"
+              class="block mt-4 md:inline-block md:mt-0 px-4 py-2 leading-none border rounded ml-5"
             >
               Resume
             </button>
