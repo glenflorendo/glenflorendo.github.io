@@ -8,16 +8,14 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap"
     />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/styles/reset.css" />
-    <!-- <link rel="stylesheet" href="/styles/main.css" /> -->
-    <link rel="stylesheet" href="/styles/tailwind.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
 
     <!-- Scripts -->
     <script
@@ -25,162 +23,122 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body class="px-16">
     <header class="py-8">
       <nav id="main-nav" class="flex items-center justify-between flex-wrap">
         <div class="flex items-center flex-shrink-0 mr-6 flex-grow">
           <span class="font-semibold text-xl tracking-tight">
             <a href="./">&lt; glenflorendo /&gt;</a>
-            <!-- <a href="./">{ glenflorendo }</a> -->
-          </span> 
+          </span>
         </div>
-        <div class="block lg:hidden">
-          <button id="menu-btn" class="flex items-center px-3 py-2 border rounded">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <div class="block md:hidden">
+          <button
+            id="menu-btn"
+            class="flex items-center px-3 py-2 border rounded"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
           </button>
         </div>
-        <div id="menu" class="hidden w-full block lg:flex lg:items-center lg:w-auto ">
+        <div
+          id="menu"
+          class="w-full md:flex md:items-center md:w-auto sm:hidden"
+        >
           <div class="text-sm">
-              <a class="block mt-4 lg:inline-block lg:mt-0 mr-6" href="#about">About</a>
-              <a class="block mt-4 lg:inline-block lg:mt-0 mr-6" href="#experience">Experience</a>
-              <a class="block mt-4 lg:inline-block lg:mt-0 mr-6" href="#work">Work</a>
-              <a class="block mt-4 lg:inline-block lg:mt-0 mr-6" href="#contact">Contact</a>
-            <button class="inline-block text-sm px-4 py-2 leading-none border rounded mt-4 lg:mt-0">Resume</button>
+            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#about"
+              >About</a
+            >
+            <a
+              class="block mt-4 md:inline-block md:mt-0 mr-6"
+              href="#experience"
+              >Experience</a
+            >
+            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#work"
+              >Work</a
+            >
+            <a class="block mt-4 md:inline-block md:mt-0 mr-6" href="#contact"
+              >Contact</a
+            >
+            <button
+              class="inline-block text-sm px-4 py-2 leading-none border rounded mt-4 lg:mt-0"
+            >
+              Resume
+            </button>
           </div>
         </div>
       </nav>
     </header>
 
-    <div id="social-container">
-        <ul>
-          <li>
-            <a href="http://github.com/glenflorendo" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://linkedin.com/in/glenflorendo" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:glen.florendo@gmail.com" target="_blank"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-
+    <div
+      id="social-container"
+      class="md:flex flex-col fixed bottom-0 text-2xl hidden"
+    >
+      <a
+        href="http://github.com/glenflorendo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fab fa-github mb-4"
+      ></a>
+      <a
+        href="http://linkedin.com/in/glenflorendo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fab fa-linkedin-in mb-4"
+      ></a>
+      <a
+        href="mailto:glen.florendo@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fas fa-envelope mb-4"
+      ></a>
+    </div>
 
     <div id="main-container">
       <section id="intro">
         <div>
           <div>
-          <h3>Hi, I'm</h3>
-          <h1><strong>Glen Florendo</strong>,</h1>
-          <h2>and I build a bunch of things.</h2>
-        </div>
-        <div class="blurb">
-          <p>
-            I'm a software engineer located in Los Angeleca, California,
-            specializing in building high-quality websites and applications,
-            as well as providing exceptional technical support.
-          </p>
-        </div>
-
-        <div id="intro-social">
-          <ul>
-            <li>
-              <a href="http://github.com/glenflorendo" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="http://linkedin.com/in/glenflorendo" target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:glen.florendo@gmail.com" target="_blank"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="about">
-        <h3>About Me</h3>
-        <div class="content">
+            <h3>Hi, I'm</h3>
+            <h1><strong>Glen Florendo</strong>,</h1>
+            <h2>and I build a bunch of things.</h2>
+          </div>
 
           <div class="blurb">
             <p>
-              Hello! I'm Glen, a software engineer in Los Angeles who enjoyes
-              building things and solving problems. I develop user-centered
-              interfaces with modern, efficient backend systems.
-            </p>
-            <p>
-              Shortly after graduating from UCLA with a
-              bachelor's degree in computer science and linguistics, I joined
-              the Talent Path division of Genuent where I was trained in web
-              development and consulting. Now, I work as a support engineer at Walt Disney
-              Studios, where I utilize my technical expertise to provide
-              unparalleled support and service to a suite of applications and
-              their diverse users.
-            </p>
-            <p>
-              Here are a few technologies I have been working with recently:
-              <ul id="skills">
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Python + pandas</li>
-                <li>SQL</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>React</li>
-              </ul>
+              I'm a software engineer located in Los Angeleca, California,
+              specializing in building high-quality websites and applications,
+              as well as providing exceptional technical support.
             </p>
           </div>
-          <div>
-              <img id="headshot" src="/assets/me.jpeg" alt="Glen Paul Florendo">
-            </div>
+
+          <div id="intro-social">
+            <ul>
+              <li>
+                <a href="http://github.com/glenflorendo" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://linkedin.com/in/glenflorendo" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:glen.florendo@gmail.com" target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
-
-      <section id="experience">
-        <h3>Experience</h3>
-        <div>
-          <div id="employers">
-              <ol>
-                <li><button class="employer-tab" id="employer-5">Employer 5</button></li>
-                <li><button class="employer-tab" id="employer-4">Employer 4</button></li>
-                <li><button class="employer-tab" id="employer-3">Employer 3</button></li>
-                <li><button class="employer-tab" id="employer-2">Employer 2</button></li>
-                <li><button class="employer-tab" id="employer-1">Employer 1</button></li>
-              </ol>
-            </div>
-            <div id="jobs">
-              <div class="job-description employer-5" id="job-5">Job 5</div>
-              <div class="job-description employer-4 hidden" id="job-4">Job 4</div>
-              <div class="job-description employer-3 hidden" id="job-3">Job 3</div>
-              <div class="job-description employer-2 hidden" id="job-2">Job 2</div>
-              <div class="job-description employer-1 hidden" id="job-1">Job 1</div>
-            </div>
-        </div>
-      </section>
-
-      <section id="Work">
-        <h1>Work</h1>
-      </section>
-
-      <section id="contact">
-        <h1>Contact</h1>
       </section>
     </div>
-
-
-
 
     <script src="/scripts/main.js"></script>
   </body>
