@@ -6,6 +6,7 @@ body {
   background: rgb(222, 232, 237);
   padding: 35px 50px;
   font-family: system-ui;
+  line-height: 1.2;
 }
 
 h1 {
@@ -23,9 +24,13 @@ h3 {
   margin: 5px 0;
 }
 
+p {
+  font-size: 1em;
+}
+
 .blurb {
   margin: 20px 0;
-  width: 50%;
+  line-height: 1.5;
 }
 
 #main-container {
@@ -85,10 +90,15 @@ button {
   border-radius: 3px;
   text-decoration: none;
   padding: 0.75rem 1rem;
+  margin: 10px 0;
   font-size: 1em;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+section#intro {
+  font-size: 20px;
 }
