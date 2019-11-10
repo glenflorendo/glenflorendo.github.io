@@ -33,7 +33,20 @@ h3 {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
+}
+
+header #home {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+header #name {
+  font-family: 'Pacifico', cursive;
 }
 
 nav#main-nav {
