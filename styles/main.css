@@ -1,0 +1,25 @@
+html {
+  margin: 0;
+}
+
+body {
+  background: rgb(222, 232, 237);
+  padding: 35px 50px;
+}
+
+nav#main ol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav#main li {
+  display: block;
+  padding: 0 1em;
+}
+
+nav#main a.button {
+  padding: 0.75rem 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+}
