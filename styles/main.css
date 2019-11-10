@@ -5,10 +5,19 @@ html {
 body {
   background: rgb(222, 232, 237);
   padding: 35px 50px;
-  font-family: system-ui;
   line-height: 1.2;
-  font-family: Calibre, 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Prata', serif;
+  font-style: italic;
 }
 
 h1 {
@@ -53,7 +62,7 @@ header #home {
 }
 
 header #name {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Prata', cursive;
 }
 
 nav#main-nav {
