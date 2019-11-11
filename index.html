@@ -45,6 +45,7 @@
               </svg>
             </button>
           </div>
+
           <div
             id="menu"
             class="w-full hidden md:flex md:items-center md:w-auto"
@@ -73,12 +74,32 @@
               >
                 Resume
               </button>
+              <div class="block md:hidden text-xl mt-4 ml-5">
+                <a
+                  href="http://github.com/glenflorendo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="fab fa-github mr-4"
+                ></a>
+                <a
+                  href="http://linkedin.com/in/glenflorendo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="fab fa-linkedin-in mr-4"
+                ></a>
+                <a
+                  href="mailto:glen.florendo@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="fas fa-envelope mr-4"
+                ></a>
+              </div>
             </div>
           </div>
         </nav>
       </header>
 
-      <div class="md:flex flex-col fixed bottom-0 text-2xl hidden">
+      <div id="sticky-socials" class="hidden flex-col fixed bottom-0 text-2xl">
         <a
           href="http://github.com/glenflorendo"
           target="_blank"
@@ -106,42 +127,79 @@
             <h1 class="text-6xl my-2"><strong>Glen Florendo</strong></h1>
             <h2 class="text-4xl my-2">and I build a bunch of things.</h2>
           </div>
-          <div class="my-2">
+          <div class="my-4">
             <p>
               I'm a software engineer located in Los Angeleca, California,
               specializing in building high-quality websites and applications,
               as well as providing exceptional technical support.
             </p>
           </div>
+          <div id="intro-socials" class="text-2xl my-2">
+            <a
+              href="http://github.com/glenflorendo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fab fa-github mr-2"
+            ></a>
+            <a
+              href="http://linkedin.com/in/glenflorendo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fab fa-linkedin-in mr-2"
+            ></a>
+            <a
+              href="mailto:glen.florendo@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fas fa-envelope mr-2"
+            ></a>
+          </div>
         </section>
 
-        <!-- <section id="intro">
-          <div>
+        <section id="about">
+          <h3>About Me</h3>
+          <div class="content">
             <div class="blurb">
-              <p></p>
+              <p>
+                Hello! I'm Glen, a software engineer in Los Angeles who enjoyes
+                building things and solving problems. I develop user-centered
+                interfaces with modern, efficient backend systems.
+              </p>
+              <p>
+                Shortly after graduating from UCLA with a bachelor's degree in
+                computer science and linguistics, I joined the Talent Path
+                division of Genuent where I was trained in web development and
+                consulting. Now, I work as a support engineer at Walt Disney
+                Studios, where I utilize my technical expertise to provide
+                unparalleled support and service to a suite of applications and
+                their diverse users.
+              </p>
+              <div>
+                <p>
+                  Here are a few technologies I have been working with recently:
+                </p>
+                <ul id="skills">
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                  <li>Python + pandas</li>
+                  <li>SQL</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>MongoDB</li>
+                  <li>React</li>
+                </ul>
+              </div>
             </div>
 
-            <div id="intro-social">
-              <ul>
-                <li>
-                  <a href="http://github.com/glenflorendo" target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="http://linkedin.com/in/glenflorendo" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="mailto:glen.florendo@gmail.com" target="_blank"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
+            <div>
+              <img
+                id="headshot"
+                src="/assets/me.jpeg"
+                alt="Glen Paul Florendo"
+              />
             </div>
           </div>
-        </section> -->
+        </section>
       </div>
     </div>
 

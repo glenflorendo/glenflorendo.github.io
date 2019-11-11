@@ -1,8 +1,8 @@
-/* div#social-container:after {
+div#sticky-socials:after {
   content: '';
   display: block;
   width: 1px;
-  height: 150px;
+  height: 100px;
   background-color: black;
   margin: 0px auto;
-} */
+}

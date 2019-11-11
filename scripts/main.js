@@ -1,25 +1,32 @@
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
+
 menuBtn.addEventListener('click', event => {
   console.log(event);
   menu.classList.toggle('hidden');
 });
 
-// const socialContainer = document.getElementById('social-container');
-// const introContents = document
-//   .getElementById('intro')
-//   .getElementsByClassName('content')[0];
-// const introContentsCoords = introContents.getBoundingClientRect();
+const stickySocials = document.getElementById('sticky-socials');
+const introSocials = document.getElementById('intro-socials');
+const introSocialsCoords = introSocials.getBoundingClientRect();
 
-// document.addEventListener('scroll', function() {
-//   const scrollTop = window.scrollY;
-//   const introContentsBottom =
-//     introContentsCoords.y + introContentsCoords.height;
-//   console.log(scrollTop, introContentsCoords.y, introContentsCoords.height);
+const checkStickySocials = () => {
+  const scrollY = window.scrollY;
+  const introSocialsBtm = introSocialsCoords.y + introSocialsCoords.height;
+  const windowWidth = window.innerWidth;
 
-//   socialContainer.style.display =
-//     scrollTop > introContentsBottom ? 'block' : 'none';
-// });
+  const introSocialsInView = scrollY < introSocialsBtm;
+  const validWindowSize = windowWidth > 768;
+
+  console.log(!introSocialsInView, validWindowSize, windowWidth);
+
+  stickySocials.style.display =
+    !introSocialsInView && validWindowSize ? 'flex' : 'none';
+};
+
+window.addEventListener('load', checkStickySocials);
+document.addEventListener('scroll', checkStickySocials);
+window.addEventListener('resize', checkStickySocials);
 
 const employerBtns = document.querySelectorAll('button.employer-tab');
 employerBtns.forEach(btn =>
