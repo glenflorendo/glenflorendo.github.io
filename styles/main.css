@@ -6,3 +6,21 @@ div#sticky-socials:after {
   background-color: black;
   margin: 0px auto;
 }
+
+h2.section-heading:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 300px;
+  background-color: black;
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
+}
+
+ul#skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  list-style: square;
+}
