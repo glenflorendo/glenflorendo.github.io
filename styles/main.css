@@ -24,3 +24,39 @@ ul#skills {
   padding-left: 20px;
   list-style: square;
 }
+
+.tab {
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  width: 30%;
+  /* height: 300px; */
+}
+
+.tab button {
+  /* display: block; */
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background: #ddd;
+}
+
+.tab button.active {
+  background: #ccc;
+}
+
+.tab-content {
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  height: 100%;
+  border-left: none;
+}

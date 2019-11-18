@@ -28,19 +28,19 @@ window.addEventListener('load', checkStickySocials);
 document.addEventListener('scroll', checkStickySocials);
 window.addEventListener('resize', checkStickySocials);
 
-const employerBtns = document.querySelectorAll('button.employer-tab');
-employerBtns.forEach(btn =>
-  btn.addEventListener('click', function(event) {
-    const employer = event.target.id;
-    const allJobs = document.querySelectorAll(`div.job-description`);
-    allJobs.forEach(job => job.classList.add('hidden'));
+const employerTabs = [...document.querySelectorAll('.tab button')];
+const openEmployer = event => {
+  const contents = [...document.getElementsByClassName('tab-content')];
+  const clickedEmployer = event.target;
+  console.log(`div.tab-content.${event.target.id}`);
+  const job = document.querySelector(`div.tab-content.${event.target.id}`);
 
-    // TODO: Mark all tabs as inactive
-    // TODO: Mark toggled tab as active
+  contents.forEach(c => (c.style.display = 'none'));
+  job.style.display = 'block';
 
-    const toggledJobs = document.querySelectorAll(
-      `div.job-description.${employer}`
-    );
-    toggledJobs.forEach(job => job.classList.remove('hidden'));
-  })
-);
+  console.log(clickedEmployer);
+  console.log(job);
+};
+
+employerTabs.forEach(t => t.addEventListener('click', openEmployer));
+employerTabs[0].click();
